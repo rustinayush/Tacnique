@@ -1,0 +1,99 @@
+.adminui-container {
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.add-form-container {
+  /* height: 270px;
+  width: 270px; */
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: form-visibility 0.2s forwards;
+}
+
+@keyframes form-visibility {
+  from {
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    height: 270px;
+    width: 270px;
+    /* box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 1000px 1000px; */
+  }
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 233px;
+}
+
+.add-form input {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 95%;
+  height: 30px;
+  padding-left: 6px;
+}
+
+.buttons-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.buttons-container button:first-child {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 28px;
+  width: 70px;
+  color: #fff;
+  background-color: #00a8ff;
+  color: #fff;
+  line-height: 100%;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.buttons-container button:last-child {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 28px;
+  width: 70px;
+  color: #fff;
+  background-color: #db7725;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .adminui-container {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
